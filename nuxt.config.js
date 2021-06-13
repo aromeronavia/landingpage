@@ -2,6 +2,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   ssr: false,
   target: "static",
+  buildDir: "dist",
   generate: {
     fallback: "404.html"
   },
