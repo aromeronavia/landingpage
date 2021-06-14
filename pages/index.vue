@@ -46,18 +46,20 @@
         </a>
       </div>
       <h2 class="text-lg mt-12 font-black">About me</h2>
-      <p>
-        🗺️ Passionate about Software Design
-      </p>
-      <p>
-        💻 Langs: Javascript, Python and Ruby
-      </p>
-      <p>
-        🔄 Creator of Esquina CTO
-      </p>
-      <p>
-        🎸 Listen to my music on SoundCloud
-      </p>
+      <ul>
+        <li>
+          🗺️ Passionate about Software Design
+        </li>
+        <li>
+          💻 Langs: Javascript, Python and Ruby
+        </li>
+        <li>
+          🔄 Creator of Esquina CTO
+        </li>
+        <li>
+          🎸 Listen to my music on SoundCloud
+        </li>
+      </ul>
     </section>
   </div>
 </template>
