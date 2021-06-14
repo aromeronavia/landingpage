@@ -1,22 +1,25 @@
 <template>
-  <div class="w-full">
+  <div class="w-full" :class="`${color}-mode dark:bg-black`">
     <nav class="w-full flex justify-between px-6 py-4 h-16 bg-gray-100">
       <LanguageSelector :language="language" @click="changeLanguage" />
-      <DarkModeToggler :enabled="darkModeEnabled" />
+      <DarkModeToggler
+        :enabled="darkModeEnabled"
+        @toggle="darkModeEnabled = !darkModeEnabled"
+      />
     </nav>
-    <section id="about-me" class="w-full text-center">
+    <section id="about-me" class="w-full text-center dark:bg-black py-6">
       <img
-        class="rounded-full text-center mx-auto mt-6"
+        class="rounded-full text-center mx-auto "
         width="140"
         height="140"
         alt="image"
         src="~/assets/profilepicture.jpeg"
       />
-      <h1 class="mt-6 text-xl">Alberto Romero 👋</h1>
+      <h1 class="mt-6 text-xl dark:text-white">Alberto Romero 👋</h1>
       <div class="text-center mt-4">
         <a href="https://github.com/beeetooo" target="_blank">
           <img
-            class="inline"
+            class="inline mr-2"
             width="24"
             height="24"
             src="~/assets/github.svg"
@@ -25,7 +28,7 @@
         </a>
         <a href="https://linkedin.com/in/albertoromnav" target="_blank">
           <img
-            class="inline"
+            class="inline mr-2"
             width="24"
             height="24"
             src="~/assets/linkedin.svg"
@@ -42,6 +45,19 @@
           />
         </a>
       </div>
+      <h2 class="text-lg mt-12 font-black">About me</h2>
+      <p>
+        🗺️ Passionate about Software Design
+      </p>
+      <p>
+        💻 Langs: Javascript, Python and Ruby
+      </p>
+      <p>
+        🔄 Creator of Esquina CTO
+      </p>
+      <p>
+        🎸 Listen to my music on SoundCloud
+      </p>
     </section>
   </div>
 </template>
@@ -53,6 +69,15 @@ export default {
       language: "en",
       darkModeEnabled: false
     };
+  },
+  computed: {
+    color() {
+      if (this.darkModeEnabled) {
+        return "dark";
+      }
+
+      return "light";
+    }
   },
   methods: {
     changeLanguage() {
