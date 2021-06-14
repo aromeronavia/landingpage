@@ -16,9 +16,23 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      { hid: "description", name: "description", content: "" },
+      {
+        name: "keywords",
+        content:
+          "Alberto Romero, Alberto, Romero, Engineer, Tech Lead and Manager, esquinacto, esquina cto, tech ctos,cto tech, tech, mexico, latam tech"
+      }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com" },
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap",
+        crossorigin: true
+      }
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

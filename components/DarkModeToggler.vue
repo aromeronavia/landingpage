@@ -1,0 +1,9 @@
+<template>
+  <img
+    class="cursor-pointer"
+    width="20"
+    height="20"
+    src="~/assets/moon.svg"
+    @click="$emit('toggle')"
+  />
+</template>
