@@ -12,6 +12,36 @@
         alt="image"
         src="~/assets/profilepicture.jpeg"
       />
+      <h1 class="mt-6 text-xl">Alberto Romero 👋</h1>
+      <div class="text-center mt-4">
+        <a href="https://github.com/beeetooo" target="_blank">
+          <img
+            class="inline"
+            width="24"
+            height="24"
+            src="~/assets/github.svg"
+            alt="github-portfolio"
+          />
+        </a>
+        <a href="https://linkedin.com/in/albertoromnav" target="_blank">
+          <img
+            class="inline"
+            width="24"
+            height="24"
+            src="~/assets/linkedin.svg"
+            alt="linkedin-profile"
+          />
+        </a>
+        <a href="https://linkedin.com/in/albertoromnav" target="_blank">
+          <img
+            class="inline"
+            width="24"
+            height="24"
+            src="~/assets/curriculum.svg"
+            alt="curriculum-vitae"
+          />
+        </a>
+      </div>
     </section>
   </div>
 </template>
