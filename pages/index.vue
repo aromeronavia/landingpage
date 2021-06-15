@@ -47,17 +47,17 @@
       </div>
       <h2 class="text-xl mt-12 font-black">About me</h2>
       <ul class="text-lg w-max text-left mx-auto">
+        <li>🗺️ {{ translate("about.design") }}</li>
+        <li>💻 {{ translate("about.langs") }}</li>
         <li>
-          🗺️ Passionate about Software Design
+          🔄 {{ translate("about.creator") }}
+          <a class="underline" href="https://esquinacto.com"> Esquina CTO </a>
         </li>
         <li>
-          💻 Langs: Javascript, Python and Ruby
-        </li>
-        <li>
-          🔄 Creator of Esquina CTO
-        </li>
-        <li>
-          🎸 Listen to my music on SoundCloud
+          🎸 {{ translate("about.soundcloud") }}
+          <a class="underline" href="https://soundcloud.com/watashiwabeto">
+            Esquina CTO
+          </a>
         </li>
       </ul>
     </section>
@@ -92,6 +92,24 @@ export default {
       } else {
         this.language = "en";
       }
+    },
+    translate(key) {
+      const translations = {
+        en: {
+          "about.design": "Passionate about Software Design",
+          "about.langs": "Langs: Javascript, Python and Ruby",
+          "about.creator": "Creator of",
+          "about.soundcloud": "Listen to my music on "
+        },
+        es: {
+          "about.design": "Apasionado del Diseño de Software",
+          "about.langs": "Langs: Javascript, Python y Ruby",
+          "about.creator": "Creador de",
+          "about.soundcloud": "Escucha mi musica en"
+        }
+      };
+
+      return translations[this.language][key];
     }
   }
 };
