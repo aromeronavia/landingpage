@@ -2,12 +2,12 @@
   <div class="w-full" :class="`${color}-mode dark:bg-black`">
     <nav class="w-full flex justify-between px-6 py-4 h-16 bg-gray-100">
       <LanguageSelector :language="language" @click="changeLanguage" />
-      <DarkModeToggler
+      <!-- <DarkModeToggler
         :enabled="darkModeEnabled"
         @toggle="darkModeEnabled = !darkModeEnabled"
-      />
+      /> -->
     </nav>
-    <section id="about-me" class="w-full text-center dark:bg-black py-6">
+    <section id="about-me" class="w-full text-center dark:bg-black py-20">
       <img
         class="rounded-full text-center mx-auto "
         width="140"
@@ -15,7 +15,7 @@
         alt="image"
         src="~/assets/profilepicture.jpeg"
       />
-      <h1 class="mt-6 text-xl dark:text-white">Alberto Romero 👋</h1>
+      <h1 class="mt-6 text-2xl dark:text-white">Alberto Romero 👋</h1>
       <div class="text-center mt-4">
         <a href="https://github.com/beeetooo" target="_blank">
           <img
@@ -45,8 +45,8 @@
           />
         </a>
       </div>
-      <h2 class="text-lg mt-12 font-black">About me</h2>
-      <ul>
+      <h2 class="text-xl mt-12 font-black">About me</h2>
+      <ul class="text-lg w-max text-left mx-auto">
         <li>
           🗺️ Passionate about Software Design
         </li>
@@ -61,6 +61,10 @@
         </li>
       </ul>
     </section>
+    <!-- <section
+      id="role"
+      class="w-full text-center dark:bg-black h-screen"
+    ></section> -->
   </div>
 </template>
 
