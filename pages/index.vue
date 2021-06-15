@@ -55,9 +55,9 @@
         </li>
         <li>
           🎸 {{ translate("about.soundcloud") }}
-          <a class="underline" href="https://soundcloud.com/watashiwabeto">
-            Esquina CTO
-          </a>
+          <a class="underline" href="https://soundcloud.com/watashiwabeto"
+            >SoundCloud</a
+          >
         </li>
       </ul>
     </section>
