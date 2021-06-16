@@ -35,7 +35,7 @@
             alt="linkedin-profile"
           />
         </a>
-        <a href="https://linkedin.com/in/albertoromnav" target="_blank">
+        <a href="/resume">
           <img
             class="inline"
             width="24"
