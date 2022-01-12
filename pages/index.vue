@@ -97,13 +97,13 @@ export default {
       const translations = {
         en: {
           "about.design": "Passionate about Software Design",
-          "about.langs": "Langs: Javascript, Python and Ruby",
+          "about.langs": "Langs: Javascript, Python, Ruby and Rust",
           "about.creator": "Creator of",
-          "about.soundcloud": "Listen to my music on "
+          "about.soundcloud": "Listen to my music on"
         },
         es: {
           "about.design": "Apasionado del Diseño de Software",
-          "about.langs": "Langs: Javascript, Python y Ruby",
+          "about.langs": "Langs: Javascript, Python, Ruby y Rust",
           "about.creator": "Creador de",
           "about.soundcloud": "Escucha mi musica en"
         }
