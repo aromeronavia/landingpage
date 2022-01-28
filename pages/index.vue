@@ -94,6 +94,12 @@
               description="Discover how to play different scale modes (Doryan, Lydyan, etc) from the guitar with a Guitar Freat tool"
               :imageURL="require('~/assets/fretboard.png')"
             />
+            <project
+              targetURL="https://areehiring.com/apply/38dd989a-9c67-4f78-8ed8-255dd2107bb9"
+              title="Aree Hiring"
+              description="Meant to be a Toggl Hire clone. I did a very small quiz around Javascript, and made the system to score candidates and relate them to job posts"
+              :imageURL="require('~/assets/aree.png')"
+            />
           </article>
           <article class="hidden xl:block py-5 ml-10">
             <h2 class="text-xl text-left text-black mb-1">
@@ -122,7 +128,7 @@
               Did coding 20% of my time.
             </p>
             <p class="mt-1 text-md font-bold">
-              Rever - Senior Product Engineer
+              https://www.aromeronavia.comoRever - Senior Product Engineer
               <span class="text-xs">December 2018 - March 2020</span>
             </p>
             <p class="text-sm mt-1 text-justify">
