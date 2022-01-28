@@ -128,7 +128,7 @@
               Did coding 20% of my time.
             </p>
             <p class="mt-1 text-md font-bold">
-              https://www.aromeronavia.comoRever - Senior Product Engineer
+              Rever - Senior Product Engineer
               <span class="text-xs">December 2018 - March 2020</span>
             </p>
             <p class="text-sm mt-1 text-justify">
