@@ -9,8 +9,8 @@
         :src="imageURL"
       />
       <div class="border-right p-4">
-        <header class="font-black">{{ title }}</header>
-        <p class="mt-1 text-sm">
+        <header class="text-xl lg:text-base font-black">{{ title }}</header>
+        <p class="mt-1 text-lg lg:text-sm">
           {{ description }}
         </p>
       </div>

@@ -7,10 +7,10 @@
         @toggle="darkModeEnabled = !darkModeEnabled"
       /> -->
     </nav>
-    <div class="flex">
+    <div class="flex flex-col lg:flex-row">
       <section
         id="about-me"
-        class="w-full h-max text-center xl:border-r xl:text-left xl:px-12 dark:bg-black py-20"
+        class="w-full h-max text-center lg:border-r lg:text-left lg:px-12 dark:bg-black py-20 pb-20 lg:pb-20"
       >
         <img
           class="rounded-full mx-auto"
@@ -51,27 +51,40 @@
             />
           </a>
         </div>
-        <ul
-          class="mt-12 text-lg w-max text-left mx-auto xl:text-left xl:w-full"
-        >
-          <li>🗺️ {{ translate("about.design") }}</li>
-          <li>💻 {{ translate("about.langs") }}</li>
-          <li>
-            🔄 {{ translate("about.creator") }}
-            <a class="underline" href="https://esquinacto.com"> Esquina CTO </a>
-          </li>
-          <li>
-            🎸 {{ translate("about.soundcloud") }}
-            <a class="underline" href="https://soundcloud.com/watashiwabeto"
-              >SoundCloud</a
-            >
-          </li>
-        </ul>
+        <section class="mx-auto flex w-max lg:w-full">
+          <ul class="mt-12 text-xl lg:text-lg text-left lg:text-left lg:w-full">
+            <li>🗺️ {{ translate("about.design") }}</li>
+            <li>💻 {{ translate("about.langs") }}</li>
+            <li>
+              🔄 {{ translate("about.creator") }}
+              <a
+                class="underline"
+                href="https://esquinacto.com"
+                target="_blank"
+              >
+                Esquina CTO
+              </a>
+            </li>
+            <li>
+              🎸 {{ translate("about.soundcloud") }}
+              <a
+                class="underline"
+                href="https://soundcloud.com/watashiwabeto"
+                target="_blank"
+                >SoundCloud</a
+              >
+            </li>
+          </ul>
+        </section>
       </section>
-      <section class="hidden xl:block pr-32 pl-20">
-        <section id="summary" class="text-justify pt-7">
-          <p class="text-3xl"></p>
-          <h2 class="text-xl">About Me 👋</h2>
+      <section class="px-10 lg:pr-32 lg:pl-20">
+        <section
+          id="summary"
+          class="text-justify pt-7 pb-20 lg:pb-0 text-lg lg:text-base"
+        >
+          <h2 class="mb-2 text-2xl lg:mb-0 lg:text-xl">
+            About Me 👋
+          </h2>
           <p>
             I've been doing software engineering for 7+ years in corps and
             startups at Mexico and Silicon Valley.
@@ -98,9 +111,9 @@
             >
           </p>
         </section>
-        <section class="grid grid-cols-2">
-          <article class="hidden xl:block py-5">
-            <h2 class="text-xl text-black">Most Recent Projects</h2>
+        <section class="flex flex-col lg:grid lg:grid-cols-2">
+          <article class="pb-20 lg:py-5">
+            <h2 class="text-2xl text-black lg:text-xl">Most Recent Projects</h2>
             <project
               targetURL="https://pianokeyboard.xyz"
               title="Piano Keyboard"
@@ -120,38 +133,35 @@
               :imageURL="require('~/assets/aree.png')"
             />
           </article>
-          <article class="hidden xl:block py-5 ml-10">
-            <h2 class="text-xl text-left text-black mb-1">
+          <article class="pb-10 lg:py-5 lg:ml-10">
+            <h2 class="text-2xl text-left text-black mb-1 lg:text-xl">
               Most Revelant Experience
             </h2>
-            <p class="mt-1 text-md font-bold">
-              Shiphero - Senior Software Engineer
-              <span class="text-xs">June 2021 - Current</span>
-            </p>
-            <p class="text-sm mt-1 text-justify">
-              I did focus my first 6 months on refactoring the codebase to
+            <job
+              company="Shiphero"
+              title="Senior Software Engineer"
+              duration="June 2021 - Current"
+              summary="I did focus my first 6 months on refactoring the codebase to
               reduce legacy code and improve stability of different parts of the
               back end code base. Currently I'm working with React Native to
-              build new features for our customers.
-            </p>
-            <p class="mt-1 text-md font-bold">
-              GoExpedi - Engineering Manager
-              <span class="text-xs">April 2020 - April 2021</span>
-            </p>
-            <p class="text-sm mt-1 text-justify">
-              Managing a team of 10 engineers and an Engineering Manager.
+              build new features for our customers."
+            />
+            <job
+              company="GoExpedi"
+              title="Engineering Manager"
+              duration="April 2020 - April 2021"
+              summary="Managing a team of 10 engineers and an Engineering Manager.
               Responsible for product delivery, process ceremonies and
               continuous improvement of the overall team. Embraced a Continuous
               Delivery culture within the team, making sure we get early
               feedback and we commit healthy code into our test environments.
-              Did coding 20% of my time.
-            </p>
-            <p class="mt-1 text-md font-bold">
-              Rever - Senior Product Engineer
-              <span class="text-xs">December 2018 - March 2020</span>
-            </p>
-            <p class="text-sm mt-1 text-justify">
-              Focused on <strong>Technical Planning</strong> (decomposing
+              Did coding 20% of my time."
+            />
+            <job
+              company="Rever"
+              title="Senior Product Engineer"
+              duration="December 2018 - March 2020"
+              summary="Focused on Technical Planning (decomposing
               features through our different teams) and worked on our interview
               processes (defining interview questions and metrics). My
               responsibilities were to make our Front and Back end teams deliver
@@ -159,7 +169,8 @@
               documents, Pair Programming and doing workshops for Software
               Design and Testing. Worked with Node.js, Python, MongoDB and
               PostgreSQL.
-            </p>
+            "
+            />
           </article>
         </section>
       </section>
@@ -172,7 +183,10 @@
 </template>
 
 <script>
+import Job from "../components/Job.vue";
+
 export default {
+  components: { Job },
   data() {
     return {
       language: "en",
@@ -202,13 +216,13 @@ export default {
           "about.design": "Passionate about Software Design",
           "about.langs": "Langs: Javascript, Python, Ruby & Rust",
           "about.creator": "Creator of",
-          "about.soundcloud": "Listen to my music on"
+          "about.soundcloud": "Musician on"
         },
         es: {
           "about.design": "Apasionado del Diseño de Software",
           "about.langs": "Langs: Javascript, Python, Ruby & Rust",
           "about.creator": "Creador de",
-          "about.soundcloud": "Escucha mi musica en"
+          "about.soundcloud": "Músico en"
         }
       };
 
