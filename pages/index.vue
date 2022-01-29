@@ -10,7 +10,7 @@
     <div class="flex">
       <section
         id="about-me"
-        class="w-full text-center border-r h-max xl:text-left xl:px-12 dark:bg-black py-20"
+        class="w-full h-max text-center xl:border-r xl:text-left xl:px-12 dark:bg-black py-20"
       >
         <img
           class="rounded-full mx-auto"
@@ -51,7 +51,9 @@
             />
           </a>
         </div>
-        <ul class="mt-12 text-xl xl:text-lg text-left w-max xl:w-full mx-auto">
+        <ul
+          class="mt-12 text-xl w-max text-left mx-auto xl:text-lg xl:text-left xl:w-full"
+        >
           <li>🗺️ {{ translate("about.design") }}</li>
           <li>💻 {{ translate("about.langs") }}</li>
           <li>
@@ -68,7 +70,8 @@
       </section>
       <section class="hidden xl:block pr-32 pl-20">
         <section id="summary" class="text-justify pt-10">
-          <h2 class="text-xl">About Me</h2>
+          <p class="text-3xl"></p>
+          <h2 class="text-xl">About Me 👋</h2>
           <p>
             I've been doing software engineering for 7+ years in corps and
             startups at Mexico and Silicon Valley.
@@ -77,12 +80,21 @@
             I have relevant experience as Engineering Lead and Engineering
             Manager across different startups. I like to ship things and iterate
             fast. I have helped companies in Mexico with technical mentoring and
-            talent referral, I really enjoy working as an advisor.
+            talent referral. I really enjoy working with the community, so I
+            created a group of Technical Leaders called
+            <a
+              class="text-blue-700 font-bold underline"
+              href="https://esquinacto.com"
+              target="_blank"
+              >Esquina CTO</a
+            >
+            to gather together and share common painpoints in the startup
+            ecosystem, from the tech side.
             <a
               class="text-blue-700 font-bold underline"
               href="https://forms.gle/dqaq5SqJ76yWtAjW9"
               target="_blank"
-              >Let me know how can I help!</a
+              >Let me know how can I help</a
             >
           </p>
         </section>
@@ -188,13 +200,13 @@ export default {
       const translations = {
         en: {
           "about.design": "Passionate about Software Design",
-          "about.langs": "Langs: Javascript, Python, Ruby and Rust",
+          "about.langs": "Langs: Javascript, Python, Ruby & Rust",
           "about.creator": "Creator of",
           "about.soundcloud": "Listen to my music on"
         },
         es: {
           "about.design": "Apasionado del Diseño de Software",
-          "about.langs": "Langs: Javascript, Python, Ruby y Rust",
+          "about.langs": "Langs: Javascript, Python, Ruby & Rust",
           "about.creator": "Creador de",
           "about.soundcloud": "Escucha mi musica en"
         }
