@@ -52,7 +52,7 @@
           </a>
         </div>
         <ul
-          class="mt-12 text-xl w-max text-left mx-auto xl:text-lg xl:text-left xl:w-full"
+          class="mt-12 text-lg w-max text-left mx-auto xl:text-left xl:w-full"
         >
           <li>🗺️ {{ translate("about.design") }}</li>
           <li>💻 {{ translate("about.langs") }}</li>
@@ -69,7 +69,7 @@
         </ul>
       </section>
       <section class="hidden xl:block pr-32 pl-20">
-        <section id="summary" class="text-justify pt-10">
+        <section id="summary" class="text-justify pt-7">
           <p class="text-3xl"></p>
           <h2 class="text-xl">About Me 👋</h2>
           <p>
@@ -154,7 +154,7 @@
               Focused on <strong>Technical Planning</strong> (decomposing
               features through our different teams) and worked on our interview
               processes (defining interview questions and metrics). My
-              responsibilities are to make our Front and Back end teams deliver
+              responsibilities were to make our Front and Back end teams deliver
               quality code by doing Code Reviews, Technical Specification
               documents, Pair Programming and doing workshops for Software
               Design and Testing. Worked with Node.js, Python, MongoDB and
