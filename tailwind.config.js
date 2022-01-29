@@ -17,7 +17,7 @@ module.exports = {
       gray: colors.gray,
       white: "#f8f8f8",
       black: colors.black,
-      blue: colors.blueGray
+      blue: colors.blue
     },
     fontFamily: {
       sans: ["Quicksand", "serif"]

@@ -74,9 +74,16 @@
             startups at Mexico and Silicon Valley.
           </p>
           <p>
-            My last two years have been in leadership positions as Engineering
-            Lead and Engineering Manager, but I have not lost focus on the code,
-            I like to ship things and iterate fast.
+            I have relevant experience as Engineering Lead and Engineering
+            Manager across different startups. I like to ship things and iterate
+            fast. I have helped companies in Mexico with technical mentoring and
+            talent referral, I really enjoy working as an advisor.
+            <a
+              class="text-blue-700 font-bold underline"
+              href="https://forms.gle/dqaq5SqJ76yWtAjW9"
+              target="_blank"
+              >Let me know how can I help!</a
+            >
           </p>
         </section>
         <section class="grid grid-cols-2">
