@@ -2,7 +2,7 @@
   <section
     class="mt-4 border rounded-md border-gray-200 hover:bg-gray-100 cursor-pointer"
   >
-    <a class="flex" target="_blank" :href="targetURL">
+    <a class="flex flex-col lg:flex-row" target="_blank" :href="targetURL">
       <img
         class="w-40 h-max rounded-md object-cover"
         alt="image"
