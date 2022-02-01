@@ -1,19 +1,20 @@
 <template>
-  <div class="w-full" :class="`${color}-mode dark:bg-black`">
-    <nav class="w-full flex justify-between px-6 py-4 h-16 bg-gray-100">
-      <LanguageSelector :language="language" @click="changeLanguage" />
-      <!-- <DarkModeToggler
-        :enabled="darkModeEnabled"
+  <div class="w-full" :class="`${color}-mode dark:bg-black dark:text-white`">
+    <nav
+      class="w-full flex justify-end px-6 py-4 h-16 bg-gray-100 dark:bg-gray-800"
+    >
+      <dark-mode-toggler
+        :dark-mode="darkModeEnabled"
         @toggle="darkModeEnabled = !darkModeEnabled"
-      /> -->
+      />
     </nav>
-    <div class="flex flex-col lg:flex-row">
+    <div class="flex flex-col lg:flex-row dark:bg-background dark:text-white">
       <section
         id="about-me"
-        class="w-full h-max text-center lg:border-r lg:text-left lg:px-12 dark:bg-black py-20 pb-20 lg:pb-20"
+        class="w-full h-max text-center lg:border-r lg:text-left lg:px-12 py-20 pb-20 lg:pb-20 dark:border-slate-100"
       >
         <img
-          class="rounded-full mx-auto"
+          class="rounded-full mx-auto border-2 border-primary dark:border-opacity-0"
           width="140"
           height="140"
           alt="image"
@@ -53,25 +54,23 @@
         </div>
         <section class="mx-auto flex w-max lg:w-full">
           <ul class="mt-12 text-xl lg:text-lg text-left lg:text-left lg:w-full">
-            <li>🗺️ {{ translate("about.design") }}</li>
-            <li>💻 {{ translate("about.langs") }}</li>
+            <li>🗺️ Passionate about Software Design</li>
+            <li>💻 Langs: Javascript, Python, Ruby & Rust</li>
             <li>
-              🔄 {{ translate("about.creator") }}
-              <a
-                class="underline"
-                href="https://esquinacto.com"
-                target="_blank"
-              >
-                Esquina CTO
-              </a>
-            </li>
-            <li>
-              🎸 {{ translate("about.soundcloud") }}
+              🎸 Musician on
               <a
                 class="underline"
                 href="https://soundcloud.com/watashiwabeto"
                 target="_blank"
                 >SoundCloud</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-blue-700 font-bold underline"
+                href="https://forms.gle/dqaq5SqJ76yWtAjW9"
+                target="_blank"
+                >🚀 Are you a Startup?</a
               >
             </li>
           </ul>
@@ -96,24 +95,20 @@
             talent referral. I really enjoy working with the community, so I
             created a group of Technical Leaders called
             <a
-              class="text-blue-700 font-bold underline"
+              class="text-blue-600 font-bold underline"
               href="https://esquinacto.com"
               target="_blank"
               >Esquina CTO</a
             >
             to gather together and share common painpoints in the startup
             ecosystem, from the tech side.
-            <a
-              class="text-blue-700 font-bold underline"
-              href="https://forms.gle/dqaq5SqJ76yWtAjW9"
-              target="_blank"
-              >Let me know how can I help</a
-            >
           </p>
         </section>
         <section class="flex flex-col lg:grid lg:grid-cols-2">
           <article class="pb-20 lg:py-5">
-            <h2 class="text-2xl text-black lg:text-xl">Most Recent Projects</h2>
+            <h2 class="text-2xl text-black lg:text-xl dark:text-white">
+              Most Recent Projects
+            </h2>
             <project
               targetURL="https://pianokeyboard.xyz"
               title="Piano Keyboard"
@@ -134,11 +129,14 @@
             />
           </article>
           <article class="pb-10 lg:py-5 lg:ml-10">
-            <h2 class="text-2xl text-left text-black mb-1 lg:text-xl">
+            <h2
+              class="text-2xl text-left text-black mb-1 lg:text-xl dark:text-white"
+            >
               Most Revelant Experience
             </h2>
             <job
               company="Shiphero"
+              companyURL="https://shiphero.com"
               title="Senior Software Engineer"
               duration="June 2021 - Current"
               summary="I did focus my first 6 months on refactoring the codebase to
@@ -148,10 +146,11 @@
             />
             <job
               company="GoExpedi"
+              companyURL="https://goexpedi.com"
               title="Engineering Manager"
               duration="April 2020 - April 2021"
-              summary="Managing a team of 10 engineers and an Engineering Manager.
-              Responsible for product delivery, process ceremonies and
+              summary="Managed a team of 10 engineers and an Engineering Manager.
+              Responsible for product delivery, team culture and
               continuous improvement of the overall team. Embraced a Continuous
               Delivery culture within the team, making sure we get early
               feedback and we commit healthy code into our test environments.
@@ -159,6 +158,7 @@
             />
             <job
               company="Rever"
+              companyURL="https://reverscore.com"
               title="Senior Product Engineer"
               duration="December 2018 - March 2020"
               summary="Focused on Technical Planning (decomposing
@@ -189,7 +189,6 @@ export default {
   components: { Job },
   data() {
     return {
-      language: "en",
       darkModeEnabled: false
     };
   },
@@ -200,33 +199,6 @@ export default {
       }
 
       return "light";
-    }
-  },
-  methods: {
-    changeLanguage() {
-      if (this.language === "en") {
-        this.language = "es";
-      } else {
-        this.language = "en";
-      }
-    },
-    translate(key) {
-      const translations = {
-        en: {
-          "about.design": "Passionate about Software Design",
-          "about.langs": "Langs: Javascript, Python, Ruby & Rust",
-          "about.creator": "Creator of",
-          "about.soundcloud": "Musician on"
-        },
-        es: {
-          "about.design": "Apasionado del Diseño de Software",
-          "about.langs": "Langs: Javascript, Python, Ruby & Rust",
-          "about.creator": "Creador de",
-          "about.soundcloud": "Músico en"
-        }
-      };
-
-      return translations[this.language][key];
     }
   }
 };

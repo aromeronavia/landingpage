@@ -1,7 +1,10 @@
 <template>
   <div>
     <p class="mt-1 text-xl lg:text-base font-bold">
-      {{ company }} - {{ title }}
+      {{ title }} -
+      <a class="text-blue-600 underline" :href="companyURL" target="_blank">
+        {{ company }}</a
+      >
       <span class="hidden lg:inline text-xs">{{ duration }}</span>
     </p>
     <p class="lg:hidden text-base mb-2">{{ duration }}</p>
@@ -15,6 +18,10 @@
 export default {
   props: {
     company: {
+      type: String,
+      required: true
+    },
+    companyURL: {
       type: String,
       required: true
     },
