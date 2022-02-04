@@ -194,6 +194,9 @@ export default {
   },
   computed: {
     color() {
+      this.$colorMode.preference =
+        this.darkModeEnabled === "light" ? "dark" : "light";
+
       if (this.darkModeEnabled) {
         return "dark";
       }
