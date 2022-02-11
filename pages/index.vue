@@ -24,7 +24,7 @@
           Alberto Romero
         </h1>
         <div class="mt-4 text-center">
-          <a href="https://github.com/beeetooo" target="_blank">
+          <a href="https://github.com/aromeronavia" target="_blank">
             <img
               class="inline mr-2"
               width="24"
