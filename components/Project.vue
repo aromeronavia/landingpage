@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="mt-4 border rounded-md border-gray-200 hover:bg-gray-100 cursor-pointer"
-  >
+  <section class="mt-4 border rounded-md border-gray-200 cursor-pointer">
     <a class="flex flex-col lg:flex-row" target="_blank" :href="targetURL">
       <img
         class="w-40 h-max rounded-md object-cover"
@@ -9,8 +7,8 @@
         :src="imageURL"
       />
       <div class="border-right p-4">
-        <header class="text-xl lg:text-base font-black">{{ title }}</header>
-        <p class="mt-1 text-lg lg:text-sm">
+        <header class="text-xl font-black">{{ title }}</header>
+        <p class="mt-1 text-lg">
           {{ description }}
         </p>
       </div>

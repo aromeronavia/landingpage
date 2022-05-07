@@ -1,14 +1,13 @@
 <template>
   <div>
-    <p class="mt-1 text-xl lg:text-base font-bold">
+    <p class="mt-4 text-xl font-bold">
       {{ title }} -
       <a class="text-blue-600 underline" :href="companyURL" target="_blank">
         {{ company }}</a
       >
-      <span class="hidden lg:inline text-xs">{{ duration }}</span>
     </p>
-    <p class="lg:hidden text-base mb-2">{{ duration }}</p>
-    <p class="text-lg lg:text-sm mt-1 text-justify mb-8 lg:mb-0">
+    <p class="text-base mb-2">{{ duration }}</p>
+    <p class="text-lg mt-1 text-justify mb-8 lg:mb-0">
       {{ summary }}
     </p>
   </div>

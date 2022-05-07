@@ -1,17 +1,20 @@
 <template>
-  <div class="w-full" :class="`${color}-mode dark:bg-black dark:text-white`">
+  <div
+    class="w-full flex justify-center"
+    :class="`${color}-mode dark:bg-black dark:text-white`"
+  >
     <nav
-      class="w-full flex justify-end px-6 py-4 h-16 bg-gray-100 dark:bg-gray-800"
+      class="w-full fixed justify-end px-6 py-6 h-16 bg-gray-100 dark:bg-gray-800"
     >
       <dark-mode-toggler
         :dark-mode="darkModeEnabled"
         @toggle="darkModeEnabled = !darkModeEnabled"
       />
     </nav>
-    <div class="flex flex-col lg:flex-row dark:bg-background dark:text-white">
+    <div class="mt-16 flex flex-col dark:bg-background dark:text-white">
       <section
         id="about-me"
-        class="w-full h-max text-center lg:border-r lg:text-left lg:px-12 py-20 pb-20 lg:pb-20 dark:border-slate-100"
+        class="w-full h-max text-center py-10 dark:border-slate-100"
       >
         <img
           class="rounded-full mx-auto border-2 border-primary dark:border-opacity-0"
@@ -52,8 +55,8 @@
             />
           </a>
         </div>
-        <section class="mx-auto flex w-max lg:w-full">
-          <ul class="mt-12 text-xl lg:text-lg text-left lg:text-left lg:w-full">
+        <section class="mx-auto flex w-max">
+          <ul class="mt-12 text-xl text-left">
             <li>🗺️ Passionate about Software Design</li>
             <li>💻 Langs: Javascript, Python, Ruby & Rust</li>
             <li>
@@ -76,24 +79,19 @@
           </ul>
         </section>
       </section>
-      <section class="px-10 lg:pr-32 lg:pl-20">
-        <section
-          id="summary"
-          class="text-justify pt-7 pb-20 lg:pb-0 text-lg lg:text-base"
-        >
-          <h2 class="mb-2 text-2xl lg:mb-0 lg:text-xl">
+      <section class="px-20 flex-col lg:w-1/2 lg:mx-auto ">
+        <section id="summary" class="mb-10 text-justify text-lg lg:text-base">
+          <h2 class="mb-2 text-2xl font-black underline">
             About Me 👋
           </h2>
-          <p>
+          <p class="text-xl leading-8">
             I've been doing software engineering for 7+ years in corps and
-            startups at Mexico and Silicon Valley.
-          </p>
-          <p>
-            I have relevant experience as Engineering Lead and Engineering
-            Manager across different startups. I like to ship things and iterate
-            fast. I have helped companies in Mexico with technical mentoring and
-            talent referral. I really enjoy working with the community, so I
-            created a group of Technical Leaders called
+            startups at Mexico and Silicon Valley. I have relevant experience as
+            Engineering Lead and Engineering Manager across different startups.
+            I like to ship things and iterate fast. I have helped companies in
+            Mexico with technical mentoring and talent referral. I really enjoy
+            working with the community, so I created a group of Technical
+            Leaders called
             <a
               class="text-blue-600 font-bold underline"
               href="https://esquinacto.com"
@@ -104,9 +102,9 @@
             ecosystem, from the tech side.
           </p>
         </section>
-        <section class="flex flex-col lg:grid lg:grid-cols-2">
-          <article class="pb-20 lg:py-5">
-            <h2 class="text-2xl text-black lg:text-xl dark:text-white">
+        <section class="flex flex-col">
+          <article class="pb-10 lg:py-5">
+            <h2 class="text-2xl font-black underline dark:text-white">
               Most Recent Projects
             </h2>
             <project
@@ -128,11 +126,11 @@
               :imageURL="require('~/assets/aree.png')"
             />
           </article>
-          <article class="pb-10 lg:py-5 lg:ml-10">
+          <article class="pb-10">
             <h2
-              class="text-2xl text-left text-black mb-1 lg:text-xl dark:text-white"
+              class="text-2xl text-left font-black mb-1 underline dark:text-white"
             >
-              Most Revelant Experience
+              Most Relevant Experience
             </h2>
             <job
               company="Shiphero"
@@ -189,7 +187,7 @@ export default {
   components: { Job },
   data() {
     return {
-      darkModeEnabled: false
+      darkModeEnabled: true
     };
   },
   computed: {
