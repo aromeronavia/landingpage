@@ -3,15 +3,7 @@
     class="w-full flex justify-center"
     :class="`${color}-mode dark:bg-black dark:text-white`"
   >
-    <nav
-      class="w-full fixed justify-end px-6 py-6 h-16 bg-gray-100 dark:bg-gray-800"
-    >
-      <dark-mode-toggler
-        :dark-mode="darkModeEnabled"
-        @toggle="darkModeEnabled = !darkModeEnabled"
-      />
-    </nav>
-    <div class="mt-16 flex flex-col dark:bg-background dark:text-white">
+    <div class="flex flex-col dark:bg-background dark:text-white">
       <section
         id="about-me"
         class="w-full h-max text-center py-10 dark:border-slate-100"
