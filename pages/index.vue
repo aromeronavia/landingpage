@@ -1,12 +1,9 @@
 <template>
-  <div
-    class="w-full flex justify-center"
-    :class="`${color}-mode dark:bg-black dark:text-white`"
-  >
+  <div class="w-full flex justify-center dark:bg-black dark:text-white">
     <div class="flex flex-col dark:bg-background dark:text-white">
       <section
         id="about-me"
-        class="w-full h-max text-center py-10 dark:border-slate-100"
+        class="w-full mt-16 mb-8 h-max text-center py-10 dark:border-slate-100"
       >
         <img
           class="rounded-full mx-auto border-2 border-primary dark:border-opacity-0"
@@ -52,20 +49,21 @@
             <li>🗺️ Passionate about Software Design</li>
             <li>💻 Langs: Javascript, Python, Ruby & Rust</li>
             <li>
+              ✍️ I Write about Software
+              <a
+                class="underline"
+                href="https://aromeronavia.hashnode.dev/"
+                target="_blank"
+                >in my blog</a
+              >
+            </li>
+            <li>
               🎸 Musician on
               <a
                 class="underline"
                 href="https://soundcloud.com/watashiwabeto"
                 target="_blank"
                 >SoundCloud</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-blue-700 font-bold underline"
-                href="https://forms.gle/dqaq5SqJ76yWtAjW9"
-                target="_blank"
-                >🚀 Are you a Startup?</a
               >
             </li>
           </ul>
@@ -95,7 +93,7 @@
           </p>
         </section>
         <section class="flex flex-col">
-          <article class="pb-10 lg:py-5">
+          <article class="pb-10 mb-16 lg:py-5">
             <h2 class="text-2xl font-black underline dark:text-white">
               Most Recent Projects
             </h2>
@@ -182,15 +180,9 @@ export default {
       darkModeEnabled: true
     };
   },
-  computed: {
-    color() {
-      this.$colorMode.preference = this.darkModeEnabled ? "dark" : "light";
-
-      if (this.darkModeEnabled) {
-        return "dark";
-      }
-
-      return "light";
+  watch: {
+    darkModeEnabled(val) {
+      this.$colorMode.preference = val === true ? "dark" : "light";
     }
   }
 };

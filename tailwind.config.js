@@ -10,7 +10,6 @@ module.exports = {
   ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
-    darkSelector: ".dark-mode",
     extend: {},
     colors: {
       primary: "#171B61",
@@ -25,24 +24,15 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
     backgroundColor: [
       "dark",
       "dark-hover",
       "dark-group-hover",
       "dark-even",
-      "dark-odd",
-      "hover",
-      "responsive"
+      "dark-odd"
     ],
-    borderColor: [
-      "dark",
-      "dark-focus",
-      "dark-focus-within",
-      "hover",
-      "responsive"
-    ],
-    textColor: ["dark", "dark-hover", "dark-active", "hover", "responsive"]
+    borderColor: ["dark", "dark-focus", "dark-focus-within"],
+    textColor: ["dark", "dark-hover", "dark-active"]
   },
   plugins: [require("tailwindcss-dark-mode")()]
 };

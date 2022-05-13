@@ -55,6 +55,9 @@ export default {
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode"
   ],
+  colorMode: {
+    classSuffix: ""
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
