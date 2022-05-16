@@ -44,7 +44,7 @@
             />
           </a>
         </div>
-        <section class="mx-auto flex w-max">
+        <section class="flex px-10 justify-center">
           <ul class="mt-12 text-xl text-left">
             <li>🗺️ Passionate about Software Design</li>
             <li>💻 Langs: Javascript, Python, Ruby & Rust</li>
@@ -69,7 +69,7 @@
           </ul>
         </section>
       </section>
-      <section class="px-20 flex-col lg:w-1/2 lg:mx-auto ">
+      <section class="px-10 lg:px-20 flex-col lg:w-1/2 lg:mx-auto ">
         <section id="summary" class="mb-10 text-justify text-lg lg:text-base">
           <h2 class="mb-2 text-2xl font-black">
             About Me 👋
@@ -93,7 +93,7 @@
           </p>
         </section>
         <section class="flex flex-col">
-          <article class="pb-10 mb-16 lg:py-5">
+          <article class="pb-10 mb-16">
             <h2 class="text-2xl font-black dark:text-white">
               Most Recent Projects
             </h2>
