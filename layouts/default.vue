@@ -6,7 +6,7 @@
 
 <style>
 html {
-  font-family: Quicksand;
+  font-family: Raleway, serif;
   scroll-behavior: smooth;
 }
 </style>

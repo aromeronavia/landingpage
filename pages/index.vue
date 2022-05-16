@@ -71,10 +71,10 @@
       </section>
       <section class="px-20 flex-col lg:w-1/2 lg:mx-auto ">
         <section id="summary" class="mb-10 text-justify text-lg lg:text-base">
-          <h2 class="mb-2 text-2xl font-black underline">
+          <h2 class="mb-2 text-2xl font-black">
             About Me 👋
           </h2>
-          <p class="text-xl leading-8">
+          <p class="text-xl leading-8 font-thin">
             I've been doing software engineering for 7+ years in corps and
             startups at Mexico and Silicon Valley. I have relevant experience as
             Engineering Lead and Engineering Manager across different startups.
@@ -94,7 +94,7 @@
         </section>
         <section class="flex flex-col">
           <article class="pb-10 mb-16 lg:py-5">
-            <h2 class="text-2xl font-black underline dark:text-white">
+            <h2 class="text-2xl font-black dark:text-white">
               Most Recent Projects
             </h2>
             <project
@@ -117,9 +117,7 @@
             />
           </article>
           <article class="pb-10">
-            <h2
-              class="text-2xl text-left font-black mb-1 underline dark:text-white"
-            >
+            <h2 class="text-2xl text-left font-black mb-1 dark:text-white">
               Most Relevant Experience
             </h2>
             <job

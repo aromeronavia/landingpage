@@ -33,8 +33,7 @@ export default {
       { rel: "preconnect", href: "https://fonts.gstatic.com" },
       {
         rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Raleway&display=swap",
         crossorigin: true
       }
     ]

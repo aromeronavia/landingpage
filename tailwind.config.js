@@ -20,7 +20,7 @@ module.exports = {
       background: "#1e2122"
     },
     fontFamily: {
-      sans: ["Quicksand", "serif"]
+      sans: ["Raleway", "serif"]
     }
   },
   variants: {
