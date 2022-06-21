@@ -98,6 +98,12 @@
               Most Recent Projects
             </h2>
             <project
+              targetURL="https://workat.coffee"
+              title="Work At Coffee"
+              description="Web Page to review different coffee shops in Guadalajara with good remote ammenities (wifi, desks)"
+              :imageURL="require('~/assets/workat.png')"
+            />
+            <project
               targetURL="https://pianokeyboard.xyz"
               title="Piano Keyboard"
               description="Piano Keyboard, capable of reproducing sounds with different sinoidal shapes"
@@ -120,6 +126,14 @@
             <h2 class="text-2xl text-left font-black mb-1 dark:text-white">
               Most Relevant Experience
             </h2>
+            <job
+              company="Pesto"
+              companyURL="https://pesto.app"
+              title="Software Engineer"
+              duration="June 2022 - Current"
+              summary="Working on new features with really amazing people.
+              We are on a mission to make remote work less lonely and more effective."
+            />
             <job
               company="Shiphero"
               companyURL="https://shiphero.com"

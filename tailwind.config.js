@@ -17,7 +17,7 @@ module.exports = {
       white: "#f8f8f8",
       black: colors.black,
       blue: colors.blue,
-      background: "#1e2122"
+      background: "#645A53"
     },
     fontFamily: {
       sans: ["Raleway", "serif"]
