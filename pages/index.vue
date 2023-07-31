@@ -5,21 +5,24 @@
     >
       <section
         id="about-me"
-        class="w-2/3 mt-16 mb-8 h-max text-center dark:border-slate-100 md:grid md:grid-cols-2 md:px-0"
+        class="w-2/3 mt-12 mb-8 h-max text-center dark:border-slate-100 md:grid md:px-0 xl:w-1/2 md:mt-16"
+        :style="{
+          gridTemplateColumns: '2fr 1fr',
+        }"
       >
         <div class="flex flex-col justify-center md:items-baseline">
           <HeaderInfo class="hidden md:block" />
         </div>
         <img
           class="rounded-full mx-auto"
-          width="240"
-          height="240"
+          width="220"
+          height="220"
           alt="image"
           src="~/assets/profilepicture.png"
         />
         <HeaderInfo class="md:hidden" />
       </section>
-      <section id="links" class="w-2/3">
+      <section id="links" class="w-2/3 xl:w-1/2">
         <ul
           class="grid grid-cols-2 gap-3 sm:gap-2 sm:flex sm:flex-row sm:flex-wrap text-center"
         >
@@ -52,7 +55,7 @@
       </section>
       <section
         id="summary"
-        class="mt-10 flex flex-col w-2/3 text-lg mx-auto sm:px-0"
+        class="mt-10 flex flex-col w-2/3 text-lg mx-auto sm:px-0 xl:w-1/2"
       >
         <div class="mb-10">
           <p>
