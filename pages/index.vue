@@ -5,7 +5,7 @@
     >
       <section
         id="about-me"
-        class="w-2/3 mt-12 mb-8 h-max text-center dark:border-slate-100 md:grid md:px-0 xl:w-1/2 md:mt-16"
+        class="w-full mt-12 mb-8 h-max text-center dark:border-slate-100 md:w-2/3 md:grid md:px-0 2xl:w-1/3 md:mt-16 lg:w-1/2"
         :style="{
           gridTemplateColumns: '2fr 1fr',
         }"
@@ -22,27 +22,30 @@
         />
         <HeaderInfo class="md:hidden" />
       </section>
-      <section id="links" class="w-2/3 xl:w-1/2">
+      <section
+        id="links"
+        class="w-full px-5 md:w-2/3 md:px-0 2xl:w-1/3 lg:w-1/2"
+      >
         <ul
-          class="grid grid-cols-2 gap-3 sm:gap-2 sm:flex sm:flex-row sm:flex-wrap text-center"
+          class="grid grid-cols-2 gap-3 md:gap-2 md:flex md:flex-row md:flex-wrap text-center"
         >
-          <li class="py-2 sm:py-1 sm:px-3 bg-red-600 rounded-3xl text-white">
+          <li class="py-2 md:py-1 md:px-3 bg-red-600 rounded-3xl text-white">
             <a href="https://generalistengineer.substack.com/" target="_blank">
               ✍️ Substack
             </a>
           </li>
-          <li class="py-2 sm:py-1 sm:px-3 bg-black rounded-3xl text-white">
+          <li class="py-2 md:py-1 md:px-3 bg-black rounded-3xl text-white">
             <a href="https://codepen.io/setzer777" target="_blank">
               ✒️ Codepen
             </a>
           </li>
-          <li class="py-2 sm:py-1 sm:px-3 bg-violet-500 rounded-3xl text-white">
+          <li class="py-2 md:py-1 md:px-3 bg-violet-500 rounded-3xl text-white">
             <a href="https://slides.com/aromeronavia" target="_blank">
               📣 Talks
             </a>
           </li>
           <li
-            class="py-2 sm:py-1 sm:px-3 bg-emerald-500 rounded-3xl text-white"
+            class="py-2 md:py-1 md:px-3 bg-emerald-500 rounded-3xl text-white"
           >
             <a
               href="https://albertoromero.notion.site/Alberto-Romero-Software-Engineer-6cfdf313e02b4f14a365ed01c5a0094d?pvs=4"
@@ -55,7 +58,7 @@
       </section>
       <section
         id="summary"
-        class="mt-10 flex flex-col w-2/3 text-lg mx-auto sm:px-0 xl:w-1/2"
+        class="w-full px-5 mt-10 flex flex-col text-lg md:w-2/3 mx-auto md:px-0 2xl:w-1/3 lg:w-1/2"
       >
         <div class="mb-10">
           <p>
@@ -63,8 +66,8 @@
             Startup building
             <span class="text-red-700">Dev Tools around databases</span>. I have
             7+ years of relevant experience doing Front End with
-            <span class="text-yellow-300"
-              >(React.js, Tailwind, Styled Components)</span
+            <span class="text-red-300"
+              >React.js, Tailwind, Styled Components</span
             >, Back End with
             <span class="text-green-500"> Typescript (Knex.js, Prisma)</span>
             and
