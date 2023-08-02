@@ -1,9 +1,13 @@
 <template>
-  <body class="dark:bg-black w-full h-full">
-    <div class="w-full h-full flex justify-center dark:text-white">
+  <body class="dark:bg-black w-full h-max">
+    <div class="w-full h-max flex justify-center dark:text-white">
       <div class="flex flex-col dark:text-white w-full h-full items-center">
         <label class="switch mt-4 mr-8 text-right self-end">
-          <input type="checkbox" @click="toggleCheckbox" />
+          <input
+            type="checkbox"
+            @click="toggleCheckbox"
+            :checked="colorMode.preference === 'dark'"
+          />
           <div class="slider round"></div>
         </label>
         <section
@@ -113,7 +117,7 @@
 </template>
 <script setup lang="ts">
 const colorMode = useColorMode();
-const checkbox = ref(false);
+const checkbox = ref(colorMode.preference === "dark" ? true : false);
 
 const toggleCheckbox = () => {
   colorMode.preference = colorMode.preference === "light" ? "dark" : "light";
