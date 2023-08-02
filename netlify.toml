@@ -6,4 +6,4 @@
   # located at the absolute path "root/project/build-output"
 
   publish = "output/"
-  command = "touch dist/dist/server/client.manifest.mjs && yarn generate && yarn build"
+  command = "touch /opt/build/repo/dist/dist/server/client.manifest.mjs && yarn generate && yarn build"
