@@ -6,4 +6,4 @@
   # located at the absolute path "root/project/build-output"
 
   publish = "dist"
-  command = "nuxt build"
+  command = "yarn generate && yarn build"
