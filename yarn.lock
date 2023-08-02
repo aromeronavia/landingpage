@@ -7448,6 +7448,11 @@ vue-router@^4.2.4:
   dependencies:
     "@vue/devtools-api" "^6.5.0"
 
+vue-toggle-btn@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/vue-toggle-btn/-/vue-toggle-btn-0.1.2.tgz#cd7c361d167e28f004276e79b7d32f17539654ec"
+  integrity sha512-y73YXhMVMsqrWFuK01ETjbg344hqW+IWXh1T9NDxVhtbkJTOk5jBeRtDnoyZ4i4fhg+f7p2Xgawz5V5ffMDTRA==
+
 vue@^3.3.4:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.3.4.tgz#8ed945d3873667df1d0fcf3b2463ada028f88bd6"

@@ -1,16 +1,14 @@
 <template>
-  <html class="dark:bg-black w-full h-full">
-    <h1>Color mode: {{ $colorMode.value }}</h1>
-
-    <select v-model="$colorMode.preference">
-      <option value="light">Light</option>
-      <option value="dark">Dark</option>
-    </select>
+  <body class="dark:bg-black w-full h-full">
     <div class="w-full h-full flex justify-center dark:text-white">
       <div class="flex flex-col dark:text-white w-full h-full items-center">
+        <label class="switch mt-4 mr-8 text-right self-end">
+          <input type="checkbox" @click="toggleCheckbox" />
+          <div class="slider round"></div>
+        </label>
         <section
           id="about-me"
-          class="w-full mt-12 mb-8 h-max text-center dark:border-slate-100 md:w-2/3 md:grid md:px-0 2xl:w-1/3 md:mt-16 lg:w-1/2"
+          class="w-full mt-12 mb-8 h-max text-center dark:border-slate-100 md:w-2/3 md:grid md:px-0 2xl:w-1/3 md:mt-12 lg:w-1/2"
           :style="{
             gridTemplateColumns: '2fr 1fr',
           }"
@@ -85,8 +83,7 @@
               <span class="text-blue-500">
                 Python (Django, Flask, SQLAlchemy)
               </span>
-              , and ultimately building with
-              <span class="text-primary">Rust</span>!
+              , and lately building with Rust
             </p>
             <p class="mt-4">
               I want to remain in the Developer Tools space. I have been really
@@ -112,8 +109,73 @@
       class="w-full text-center dark:bg-black h-screen"
     ></section> -->
     </div>
-  </html>
+  </body>
 </template>
 <script setup lang="ts">
 const colorMode = useColorMode();
+const checkbox = ref(false);
+
+const toggleCheckbox = () => {
+  colorMode.preference = colorMode.preference === "light" ? "dark" : "light";
+  checkbox.value = !checkbox;
+};
 </script>
+
+<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c3c3c3;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #101010;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #101010;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>

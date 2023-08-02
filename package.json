@@ -19,6 +19,7 @@
     "@headlessui/vue": "^1.7.14",
     "@heroicons/vue": "^2.0.18",
     "@nuxtjs/google-fonts": "^3.0.2",
-    "tailwindcss-dark-mode": "^1.1.7"
+    "tailwindcss-dark-mode": "^1.1.7",
+    "vue-toggle-btn": "^0.1.2"
   }
 }
