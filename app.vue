@@ -14,7 +14,7 @@
         </label>
         <section
           id="about-me"
-          class="w-full mt-12 mb-8 h-max text-center dark:border-slate-100 md:w-2/3 md:grid md:px-0 2xl:w-1/3 md:mt-12 lg:w-1/2"
+          class="w-full mt-8 mb-8 h-max text-center dark:border-slate-100 md:w-2/3 md:grid md:px-0 2xl:w-1/3 lg:w-1/2"
           :style="{
             gridTemplateColumns: '2fr 1fr',
           }"
