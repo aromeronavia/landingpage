@@ -1,6 +1,6 @@
 <template>
-  <body class="dark:bg-black w-full h-max">
-    <div class="w-full h-max flex justify-center dark:text-white">
+  <body class="dark:bg-black w-full h-[100vh]">
+    <div class="dark:bg-black w-full h-max flex justify-center dark:text-white">
       <div class="flex flex-col dark:text-white w-full h-full items-center">
         <label class="switch mt-4 mr-8 text-right self-end">
           <input
@@ -62,7 +62,9 @@
                 📣 Talks
               </a>
             </li>
-            <li class="py-2 md:py-1 md:px-3 bg-black rounded-3xl text-white">
+            <li
+              class="py-2 md:py-1 md:px-3 bg-gray-800 rounded-3xl text-white dark:bg-gray-700"
+            >
               <a href="https://codepen.io/setzer777" target="_blank">
                 ✒️ Codepen
               </a>
