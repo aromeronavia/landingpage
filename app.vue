@@ -1,6 +1,8 @@
 <template>
-  <body class="dark:bg-black w-full h-[100vh]">
-    <div class="dark:bg-black w-full h-max flex justify-center dark:text-white">
+  <body class="dark:bg-gray-900 w-full h-[100vh]">
+    <div
+      class="dark:bg-gray-900 w-full h-max flex justify-center dark:text-white"
+    >
       <div class="flex flex-col dark:text-white w-full h-full items-center">
         <label class="switch mt-4 mr-8 text-right self-end">
           <input
@@ -89,7 +91,7 @@
               <span class="text-blue-500">
                 Python (Django, Flask, SQLAlchemy)
               </span>
-              , and lately building with Rust
+              , and lately building with Rust.
             </p>
             <p class="mt-4">
               I want to remain in the Developer Tools space. I have been really
@@ -185,3 +187,4 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 </style>
+

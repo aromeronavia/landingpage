@@ -5,33 +5,14 @@
     <h2 class="text-xl md:mt-2 md:text-2xl text-gray-500">
       Generalist Engineer
     </h2>
-    <div class="mt-4">
+    <div
+      class="mt-4 dark:fill-white flex justify-center md:justify-start gap-3"
+    >
       <a href="https://github.com/aromeronavia" target="_blank">
-        <img
-          class="inline mr-2"
-          width="22"
-          height="22"
-          src="~/assets/github.svg"
-          alt="github-portfolio"
-        />
+        <Github />
       </a>
       <a href="https://linkedin.com/in/albertoromnav" target="_blank">
-        <img
-          class="inline mr-2"
-          width="22"
-          height="22"
-          src="~/assets/linkedin.svg"
-          alt="linkedin-profile"
-        />
-      </a>
-      <a href="/resume">
-        <img
-          class="inline"
-          width="22"
-          height="22"
-          src="~/assets/curriculum.svg"
-          alt="curriculum-vitae"
-        />
+        <LinkedIn />
       </a>
     </div>
   </div>
