@@ -5,5 +5,5 @@
   # a base has not been set. This sample publishes the directory
   # located at the absolute path "root/project/build-output"
 
-  publish = ""
+  publish = "build"
   command = "yarn generate && yarn build"
