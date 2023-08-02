@@ -5,5 +5,5 @@
   # a base has not been set. This sample publishes the directory
   # located at the absolute path "root/project/build-output"
 
-  publish = "output/"
-  command = "touch /opt/build/repo/dist/dist/server/client.manifest.mjs && yarn generate && yarn build"
+  publish = ".output/"
+  command = "yarn generate && yarn build"
