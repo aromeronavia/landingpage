@@ -1,4 +1,6 @@
-export default {
+import colors from "tailwindcss/colors";
+
+export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
   ssr: false,
   target: "static",
@@ -20,7 +22,7 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Software Engineer based in Guadalajara, with some eagerness to create awesome products"
+          "Software Engineer based in Guadalajara"
       },
       {
         name: "keywords",
@@ -51,19 +53,30 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/color-mode"
   ],
   colorMode: {
     classSuffix: ""
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    '@nuxtjs/color-mode',
+    '@nuxtjs/google-fonts'
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   colorMode: {
     classSuffix: ""
+  },
+
+  googleFonts: {
+    families: {
+      Raleway: {
+        wght: [100, 400, 700],
+        ital: [100, 400, 700]
+      }
+    }
   }
-};
+});

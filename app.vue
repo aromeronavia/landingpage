@@ -1,13 +1,13 @@
 <template>
-  <html class="dark">
+  <html class="dark:bg-black w-full h-full">
+    <h1>Color mode: {{ $colorMode.value }}</h1>
+
     <select v-model="$colorMode.preference">
       <option value="light">Light</option>
       <option value="dark">Dark</option>
     </select>
-    <div class="w-full flex justify-center dark:bg-black dark:text-white">
-      <div
-        class="flex flex-col dark:bg-background dark:text-white w-full items-center"
-      >
+    <div class="w-full h-full flex justify-center dark:text-white">
+      <div class="flex flex-col dark:text-white w-full h-full items-center">
         <section
           id="about-me"
           class="w-full mt-12 mb-8 h-max text-center dark:border-slate-100 md:w-2/3 md:grid md:px-0 2xl:w-1/3 md:mt-16 lg:w-1/2"
@@ -106,37 +106,6 @@
             </p>
           </div>
         </section>
-        <section class="flex flex-col">
-          <article class="pb-10 mb-16 hidden">
-            <h2 class="text-2xl font-black dark:text-white">
-              See my Toy Projects
-            </h2>
-            <project
-              targetURL="https://workat.coffee"
-              title="Work At Coffee"
-              description="Web Page to review different coffee shops in Guadalajara with good remote ammenities (wifi, desks)"
-              :imageURL="require('~/assets/workat.png')"
-            />
-            <project
-              targetURL="https://pianokeyboard.xyz"
-              title="Piano Keyboard"
-              description="Piano Keyboard, capable of reproducing sounds with different sinoidal shapes"
-              :imageURL="require('~/assets/piano.png')"
-            />
-            <project
-              targetURL="https://explorethefret.com"
-              title="Explore the Fretboard"
-              description="Discover how to play different scale modes (Doryan, Lydyan, etc) from the guitar with a Guitar Freat tool"
-              :imageURL="require('~/assets/fretboard.png')"
-            />
-            <project
-              targetURL="https://areehiring.com/apply/38dd989a-9c67-4f78-8ed8-255dd2107bb9"
-              title="Aree Hiring"
-              description="Meant to be a Toggl Hire clone. I did a very small quiz around Javascript, and made the system to score candidates and relate them to job posts"
-              :imageURL="require('~/assets/aree.png')"
-            />
-          </article>
-        </section>
       </div>
       <!-- <section
       id="role"
@@ -145,25 +114,6 @@
     </div>
   </html>
 </template>
-
-<script>
-import Job from "../components/Job.vue";
-
-export default {
-  components: { Job },
-  data() {
-    return {
-      darkModeEnabled: true,
-    };
-  },
-  watch: {
-    darkModeEnabled(val) {
-      this.$colorMode.preference = val === true ? "dark" : "light";
-    },
-  },
-
-  mounted() {
-    this.$colorMode.preference = "dark";
-  },
-};
+<script setup lang="ts">
+const colorMode = useColorMode();
 </script>

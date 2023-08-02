@@ -1,21 +1,24 @@
 {
   "name": "landingpage",
-  "version": "1.0.0",
-  "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "@nuxtjs/color-mode": "^2.0.10",
-    "core-js": "^3.9.1",
-    "nuxt": "^2.15.3",
-    "tailwindcss-dark-mode": "^1.1.7"
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^4.0.1",
-    "postcss": "^8.2.8"
+    "@nuxt/devtools": "latest",
+    "@nuxt/image": "^1.0.0-rc.1",
+    "@nuxtjs/color-mode": "^3.3.0",
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@types/node": "^18",
+    "nuxt": "^3.6.1"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.14",
+    "@heroicons/vue": "^2.0.18",
+    "@nuxtjs/google-fonts": "^3.0.2",
+    "tailwindcss-dark-mode": "^1.1.7"
   }
 }
