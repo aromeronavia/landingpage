@@ -22,7 +22,8 @@ export default {
       red: colors.red,
       violet: colors.violet,
       yellow: colors.yellow,
-      emerald: colors.emerald
+      emerald: colors.emerald,
+      orange: colors.orange,
     },
     fontFamily: {
       sans: ["Raleway", "serif"]

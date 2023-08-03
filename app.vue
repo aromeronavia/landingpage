@@ -81,9 +81,10 @@
             <p>
               Hey! My name is Alberto Romero, I'm a software engineer at a
               Stealth Startup building
-              <span class="text-red-700">Dev Tools around databases</span>. I
-              have 7+ years of relevant experience doing Front End with
-              <span class="text-red-300"
+              <span class="text-blue-700 dark:text-blue-500"
+                >Dev Tools around databases</span
+              >. I have 7+ years of relevant experience doing Front End with
+              <span class="text-red-500 dark:text-red-300"
                 >React.js, Tailwind, Styled Components</span
               >, Back End with
               <span class="text-green-500"> Typescript (Knex.js, Prisma)</span>
@@ -91,13 +92,15 @@
               <span class="text-blue-500">
                 Python (Django, Flask, SQLAlchemy)
               </span>
-              , and lately building with Rust.
+              , and lately building with
+              <span class="text-orange-500">Rust.</span>
             </p>
             <p class="mt-4">
-              I want to remain in the Developer Tools space. I have been really
-              excited on this brand new market led by awesome entrepreneurs like
-              Guillermo Rauch, Cassidy Williams, Zeno Rocha and other people I
-              follow who are doing amazing products.
+              I am deeply passionate about the Developer Tools space and remain
+              enthusiastic about contributing to its rapid growth. I draw
+              inspiration from exceptional entrepreneurs like Guillermo Rauch,
+              Cassidy Williams, Zeno Rocha, and other influential figures whose
+              innovative products have left a lasting impact on me.
             </p>
             <p class="mt-4">
               Feel like chatting? I'm always open to meet new people, so feel
