@@ -120,6 +120,8 @@
   </body>
 </template>
 <script setup lang="ts">
+import { ref, onMounted } from "vue";
+
 const colorMode = useColorMode();
 const checkbox = ref(colorMode.preference === "dark" ? true : false);
 
@@ -127,6 +129,10 @@ const toggleCheckbox = () => {
   colorMode.preference = colorMode.preference === "light" ? "dark" : "light";
   checkbox.value = !checkbox;
 };
+
+onMounted(() => {
+  colorMode.preference = "dark";
+});
 </script>
 
 <style>
