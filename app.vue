@@ -75,7 +75,7 @@
         </section>
         <section
           id="summary"
-          class="w-full px-5 mt-10 flex flex-col text-lg md:w-2/3 mx-auto md:px-0 2xl:w-1/3 lg:w-1/2"
+          class="w-full px-5 mt-8 flex flex-col text-lg md:w-2/3 mx-auto md:px-0 2xl:w-1/3 lg:w-1/2"
         >
           <div class="mb-10">
             <p>
