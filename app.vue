@@ -58,7 +58,7 @@
               </a>
             </li>
             <li
-              class="py-2 md:py-1 md:px-3 bg-violet-500 rounded-3xl text-white"
+              class="py-2 md:py-1 md:px-3 bg-violet-500 rounded-3xl text-white dark:bg-violet-700"
             >
               <a href="https://slides.com/aromeronavia" target="_blank">
                 📣 Talks
