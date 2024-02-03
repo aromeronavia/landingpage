@@ -18,7 +18,7 @@ export default {
   props: {
     darkMode: {
       type: Boolean,
-      required: true
+      required: true,
     }
   }
 };

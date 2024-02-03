@@ -79,34 +79,32 @@
         >
           <div class="mb-10">
             <p>
-              Hey! My name is Alberto Romero, I'm a software engineer at a
-              Stealth Startup building
-              <span class="text-blue-700 dark:text-blue-500"
-                >Dev Tools around databases</span
-              >. I have 7+ years of relevant experience doing Front End with
+          Hey! My name is Alberto Romero, I'm a software engineer who loves building code for <a class="text-blue-500 underline" href="https://albertoromero.notion.site/Alberto-Romero-Software-Engineer-6cfdf313e02b4f14a365ed01c5a0094d?pvs=4">random non-profit things </a> I have 8+ years of relevant experience doing Front End with my current stack being
               <span class="text-red-500 dark:text-red-300"
-                >React.js, Tailwind, Styled Components</span
-              >, Back End with
-              <span class="text-green-500"> Typescript (Knex.js, Prisma)</span>
+                >React.js, Tailwind, Radix, Apollo</span
+              > and Back End with
+              <span class="text-green-500"> Typescript (Knex.js, Prisma, GraphQL)</span>
               and
               <span class="text-blue-500">
                 Python (Django, Flask, SQLAlchemy)
               </span>
-              , and lately building with
-              <span class="text-orange-500">Rust.</span>
+              . Spent the majority of my 2023 building with
+              <span class="text-orange-500">Rust.</span> in production for <a class="text-orange-500" href="https://neurelo.com"> Neurelo</a>
             </p>
             <p class="mt-4">
-              I am deeply passionate about the Developer Tools space and remain
-              enthusiastic about contributing to its rapid growth. I draw
-              inspiration from exceptional entrepreneurs like Guillermo Rauch,
-              Cassidy Williams, Zeno Rocha, and other influential figures whose
-              innovative products have left a lasting impact on me.
+            I am deeply passionate about <span class="text-red-500"> Developer Experience </span> and I remain
+              enthusiastic about contributing to its rapid growth. I love what
+              exceptional entrepreneurs like Guillermo Rauch,
+              Zeno Rocha, and other influential figures bring to the table by building products that I enjoy using as a developer.
+            </p>
+            <p class="mt-4">
+            <span class="text-red-500">I offer recruitment services for startups </span> looking for their founding engineers. I lead some communities in Guadalajara and I'm always in touch with developers just for the sake of learning what people is building.
             </p>
             <p class="mt-4">
               Feel like chatting? I'm always open to meet new people, so feel
-              free to reach out to me on LinkedIn or via
+              free to reach out to me on <a class="text-blue-500 underline" href="https://linkedin.com/in/albertoromnav">LinkedIn</a> or via
               <a
-                class="text-blue-500"
+                class="text-orange-500 underline"
                 href="mailto:aromeronavia@gmail.com"
                 target="_blank"
                 >email</a

@@ -73,8 +73,7 @@
         >
           <div class="mb-10">
             <p>
-              Hey! My name is Alberto Romero, I'm a software engineer at a
-              Stealth Startup building
+              Hey! My name is Alberto Romero, I'm a software engineer passionate about
               <span class="text-red-700">Dev Tools around databases</span>. I
               have 7+ years of relevant experience doing Front End with
               <span class="text-red-300"
